@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate Generator</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input, button { display: block; margin-top: 10px; padding: 8px; width: 300px; }
+  </style>
+</head>
+<body>
+  <h1>Fill in the certificate form</h1>
+  <form action="/generate" method="POST">
+    <label>Name:
+      <input type="text" name="name" required>
+    </label>
+    <label>Course:
+      <input type="text" name="course" required>
+    </label>
+    <label>Date:
+      <input type="date" name="date" required>
+    </label>
+    <button type="submit">Generate Certificate PDF</button>
+  </form>
+</body>
+</html>
